@@ -26,7 +26,7 @@ function FAQ() {
                             <div class="col-md-6 offset-md-3">
                                 <div class="faq" id="accordion">
                                     {FAQQuestion.map((item, index) =>
-                                        <div class="card" key={index} onClick={()=>toggleAccordion(index)}>
+                                        <div class="card m-3" key={index} onClick={()=>toggleAccordion(index)}>
                                             <div class="card-header" id="faqHeading-1">
                                                 <div class="mb-0">
                                                     <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-1" data-aria-expanded="true" data-aria-controls="faqCollapse-1">
