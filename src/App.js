@@ -1,13 +1,18 @@
 import React from 'react';
 import './App.css';
 import FAQ from './components/FAQ';
+import Testonomial from './components/Testonomial';
 function App() {
   return (
     <React.Fragment>
       <section className='bg-dark'>
-        <section className=''>
+        <Testonomial/>
+      </section>
+      <section className='bg-dark'>
+        
+        
           <FAQ />
-        </section>
+        
       </section>
     </React.Fragment>
   );

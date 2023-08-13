@@ -16,7 +16,7 @@ function FAQ() {
         <React.Fragment>
             <section className='container bg-dark'>
                 <section class="faq-section ">
-                    <div class="container">
+                    <div class="">
                         <div class="row">
                             <div class="col-md-6 offset-md-3">
                                 <div class="faq-title text-center pb-3">
