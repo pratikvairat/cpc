@@ -28,7 +28,6 @@ function Testonomial() {
                             <div class="text-center mb-4 pb-2">
                                 <i class="fas fa-quote-left fa-3x text-white"></i>
                             </div>
-
                             <div class="card">
                                 <div class="card-body px-4 py-5">
                                     <div id="carouselDarkVariant" class="carousel slide carousel-dark" data-mdb-ride="carousel">
