@@ -1,11 +1,28 @@
-import React from 'react';
+import React,{useState} from 'react';
 import "./css/Testonomial.css";
 import Img from "../img/profile.png"
+import { TestonomialData } from '../data/TestonomialData';
 function Testonomial() {
+    const [cursol,setCursol]=useState(0);
+    function ToggleNext(index){
+        if(index===3){
+            setCursol(0);
+        }else{
+            setCursol(index+1);
+        }
+    }
+    function TogglePrev(index){
+        if(index===0){
+            setCursol(3);
+        }else{
+            setCursol(index-1);
+        }
+    }
     return (
         <React.Fragment>
-            <section class="gradient-custom">
-                <div class="container my-5 py-5">
+            <section class="bg-dark">
+                <h2 className='text-white text-center'>Testonomial</h2>
+                <div class="container">
                     <div class="row d-flex justify-content-center">
                         <div class="col-md-12">
                             <div class="text-center mb-4 pb-2">
@@ -16,10 +33,11 @@ function Testonomial() {
                                 <div class="card-body px-4 py-5">
                                     <div id="carouselDarkVariant" class="carousel slide carousel-dark" data-mdb-ride="carousel">
                                         <div class="carousel-inner pb-5">
-                                            <div class="carousel-item active">
+                                        {TestonomialData.map((item,index)=>
+                                            <div class={cursol===index ? "":"cur-item"} >
                                                 <div class="row d-flex justify-content-center">
                                                     <div class="col-lg-10 col-xl-8">
-                                                        <div class="row">
+                                                        <div class="row" key={index} >
                                                             <div class="col-lg-4 d-flex justify-content-center">
                                                                 <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
                                                                     class="rounded-circle shadow-1 mb-4 mb-lg-0" alt="woman avatar" width="150"
@@ -27,82 +45,24 @@ function Testonomial() {
                                                             </div>
                                                             <div
                                                                 class="col-9 col-md-9 col-lg-7 col-xl-8 text-center text-lg-start mx-auto mx-lg-0">
-                                                                <h4 class="mb-4">Maria Smantha - Web Developer</h4>
+                                                                <h4 class="mb-4">{item.name}</h4>
                                                                 <p class="mb-0 pb-3">
-                                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
-                                                                    aliquam amet animi blanditiis consequatur debitis dicta
-                                                                    distinctio, enim error eum iste libero modi nam natus
-                                                                    perferendis possimus quasi sint sit tempora voluptatem. Est,
-                                                                    exercitationem id ipsa ipsum laboriosam perferendis.
+                                                                   {item.testimonial}
                                                                 </p>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-
-                                            <div class="carousel-item">
-                                                <div class="row d-flex justify-content-center">
-                                                    <div class="col-lg-10 col-xl-8">
-                                                        <div class="row">
-                                                            <div class="col-lg-4 d-flex justify-content-center">
-                                                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
-                                                                    class="rounded-circle shadow-1 mb-4 mb-lg-0" alt="woman avatar" width="150"
-                                                                    height="150" />
-                                                            </div>
-                                                            <div
-                                                                class="col-9 col-md-9 col-lg-7 col-xl-8 text-center text-lg-start mx-auto mx-lg-0">
-                                                                <h4 class="mb-4">Lisa Cudrow - Graphic Designer</h4>
-                                                                <p class="mb-0 pb-3">
-                                                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                                                                    accusantium doloremque laudantium, totam rem aperiam, eaque
-                                                                    ipsa quae ab illo inventore veritatis et quasi architecto
-                                                                    beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
-                                                                    quia voluptas sit aspernatur.
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-                                            <div class="carousel-item">
-                                                <div class="row d-flex justify-content-center">
-                                                    <div class="col-lg-10 col-xl-8">
-                                                        <div class="row">
-                                                            <div class="col-lg-4 d-flex justify-content-center">
-                                                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp"
-                                                                    class="rounded-circle shadow-1 mb-4 mb-lg-0" alt="woman avatar" width="150"
-                                                                    height="150" />
-                                                            </div>
-                                                            <div
-                                                                class="col-9 col-md-9 col-lg-7 col-xl-8 text-center text-lg-start mx-auto mx-lg-0">
-                                                                <h4 class="mb-4">John Smith - Marketing Specialist</h4>
-                                                                <p class="mb-0 pb-3">
-                                                                    At vero eos et accusamus et iusto odio dignissimos qui
-                                                                    blanditiis praesentium voluptatum deleniti atque corrupti quos
-                                                                    dolores et quas molestias excepturi sint occaecati cupiditate
-                                                                    non provident, similique sunt in culpa qui officia mollitia
-                                                                    animi id laborum et dolorum fuga.
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        )} 
                                         </div>
-
-                                        <button class="carousel-control-prev" type="button">
+                                        <button class="carousel-control-prev" type="button" onClick={()=>{TogglePrev(cursol)}}>
                                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-
                                         </button>
-                                        <button class="carousel-control-next" type="button">
+                                        <button class="carousel-control-next" type="button" onClick={()=>{ToggleNext(cursol)}}>
                                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-
                                         </button>
                                     </div>
-
                                 </div>
                             </div>
 
