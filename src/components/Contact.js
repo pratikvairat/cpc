@@ -1,6 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './css/Contact.css';
 function Contact() {
+    const [name,setName]=useState("");
+    const [email,setEmail]=useState("");
+    const [phone,setPhone]=useState("");
+    const [message,setMessage]=useState("");
+    
     return (
         <React.Fragment>
             <section>
@@ -52,32 +57,23 @@ function Contact() {
                             <form action="index.html" autocomplete="off">
                                 <h3 class="title">Contact us</h3>
                                 <div class="input-container">
-                                    <input type="text" name="name" class="input" />
-                                    <label for="">Username</label>
-                                    <span>Username</span>
+                                    <input id="it" type="text"  class="input"   placeholder="Name"/>
                                 </div>
                                 <div class="input-container">
-                                    <input type="email" name="email" class="input" />
-                                    <label for="">Email</label>
-                                    <span>Email</span>
+                                    <input type="email" name="email" class="input" placeholder="Email"/>
                                 </div>
                                 <div class="input-container">
-                                    <input type="tel" name="phone" class="input" />
-                                    <label for="">Phone</label>
-                                    <span>Phone</span>
+                                    <input type="tel" name="phone" class="input" placeholder='Contact'/>
+
                                 </div>
                                 <div class="input-container textarea">
-                                    <textarea name="message" class="input"></textarea>
-                                    <label for="">Message</label>
-                                    <span>Message</span>
+                                    <textarea name="message" class="input" placeholder="Message"></textarea>
                                 </div>
                                 <input type="submit" value="Send" class="btn" />
                             </form>
                         </div>
                     </div>
                 </div>
-
-
             </section>
         </React.Fragment>
     )
