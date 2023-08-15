@@ -57,17 +57,17 @@ function Contact() {
                             <form action="index.html" autocomplete="off">
                                 <h3 class="title">Contact us</h3>
                                 <div class="input-container">
-                                    <input id="it" type="text"  class="input"   placeholder="Name"/>
+                                    <input id="it" type="text"  class="input"   placeholder="Name" onChange={(e)=>{setName(e.target.value)}}/>
                                 </div>
                                 <div class="input-container">
-                                    <input type="email" name="email" class="input" placeholder="Email"/>
+                                    <input type="email" name="email" class="input" placeholder="Email" onChange={(e)=>{setEmail(e.target.value)}}/>
                                 </div>
                                 <div class="input-container">
-                                    <input type="tel" name="phone" class="input" placeholder='Contact'/>
+                                    <input type="tel" name="phone" class="input" placeholder='Contact' onChange={(e)=>{setPhone(e.target.value)}}/>
 
                                 </div>
                                 <div class="input-container textarea">
-                                    <textarea name="message" class="input" placeholder="Message"></textarea>
+                                    <textarea name="message" class="input" placeholder="Message" onChange={(e)=>{setMessage(e.target.value) }}></textarea>
                                 </div>
                                 <input type="submit" value="Send" class="btn" />
                             </form>
