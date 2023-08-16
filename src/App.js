@@ -1,21 +1,24 @@
 import React from 'react';
+import {BrowserRouter} from "react-router-dom";
 import './App.css';
 import FAQ from './components/FAQ';
-import Contact from './components/Contact';
 import Testonomial from './components/Testonomial';
+import Footer from './components/Footer';
 function App() {
   return (
     <React.Fragment>
+      <BrowserRouter>
       <section className='bg-dark'>
         <Testonomial/>
       </section>
-      <section>
-        <Contact />
-      </section>
+      
       <section className='bg-dark'>
           <FAQ />
       </section>
-      
+      <section className='footer'>
+        <Footer/>
+      </section>
+      </BrowserRouter>
     </React.Fragment>
   );
 }
