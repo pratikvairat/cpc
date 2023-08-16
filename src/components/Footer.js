@@ -1,5 +1,6 @@
 import React from 'react';
 import './css/Footer.css'; 
+import SliderEvent from './SliderEvent';
 
 const Footer = () => {
   return (
@@ -23,7 +24,7 @@ const Footer = () => {
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4">
               <h5>Recent Activities</h5>
-              {/* Your slider component can be added here */}
+              <SliderEvent/>
             </div>
           </div>
           <div className="row">

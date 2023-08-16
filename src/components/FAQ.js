@@ -15,8 +15,8 @@ function FAQ() {
     return (
         <React.Fragment>
             <section className='container bg-dark'>
-                <section class="faq-section ">
-                    <div class="">
+                
+                    <div class="faq-section">
                         <div class="row">
                             <div class="col-md-6 offset-md-3">
                                 <div class="faq-title text-center pb-3">
@@ -45,7 +45,7 @@ function FAQ() {
                             </div>
                         </div>
                     </div>
-                </section>
+               
             </section>
         </React.Fragment>
     )
