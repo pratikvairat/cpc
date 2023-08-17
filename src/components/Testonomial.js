@@ -42,8 +42,7 @@ function Testonomial() {
                                                                     class="rounded-circle shadow-1 mb-4 mb-lg-0" alt="woman avatar" width="150"
                                                                     height="150" />
                                                             </div>
-                                                            <div
-                                                                class="col-9 col-md-9 col-lg-7 col-xl-8 text-center text-lg-start mx-auto mx-lg-0">
+                                                            <div class="col-9 col-md-9 col-lg-7 col-xl-8 text-center text-lg-start mx-auto mx-lg-0">
                                                                 <h4 class="mb-4">{item.name}</h4>
                                                                 <p class="mb-0 pb-3">
                                                                    {item.testimonial}

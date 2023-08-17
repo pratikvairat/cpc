@@ -23,7 +23,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4">
-              <h5>Recent Activities</h5>
+             
               <SliderEvent/>
             </div>
           </div>
