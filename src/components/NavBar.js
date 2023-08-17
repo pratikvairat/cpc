@@ -1,4 +1,7 @@
 import React from 'react'
+import { Route, Routes, Link } from 'react-router-dom';
+import Home from './Home';
+import Contact from './Contact.js';
 import './css/NavBar.css'
 function NavBar() {
     return (
@@ -12,7 +15,7 @@ function NavBar() {
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">Home</a>
+                                <Link to="/" class="nav-link" href="#">Home</Link>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Blog</a>
@@ -33,12 +36,16 @@ function NavBar() {
                                 <a class="nav-link" href="#">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
+                                <Link to="/contact" class="nav-link" >Contact</Link>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
+            <Routes>
+                <Route exact path="/" Component={Home} />
+                <Route exact path="/contact" Component={Contact} />
+            </Routes>
         </React.Fragment>
     )
 }

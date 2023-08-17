@@ -12,13 +12,13 @@ textarea {
   font-family: "Poppins", sans-serif;
 }
 
-.container {
+.con{
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  min-height: 150vh;
   padding: 2rem;
   padding-top: 160px;
-  background-color: #e4e6cb;
+  background-color: black;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -29,6 +29,7 @@ textarea {
   width: 100%;
   max-width: 800px;
   height: 550px;
+  
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
@@ -39,13 +40,13 @@ textarea {
 }
 
 .contact-form {
-  background-color: #5583e7;
+  background-color: #b9471a;
   position: relative;
 }
 
 .circle {
   border-radius: 50%;
-  background: linear-gradient(135deg, transparent 20%, #3d9ece);
+  background: linear-gradient(135deg, transparent 20%, #e79b03);
   position: absolute;
 }
 
@@ -68,7 +69,7 @@ textarea {
   position: absolute;
   width: 26px;
   height: 26px;
-  background-color: #5583e7;
+  background-color: #f35f02;
   transform: rotate(45deg);
   top: 50px;
   left: -13px;
@@ -140,7 +141,7 @@ textarea.input {
   background-color: #fff;
   border: 2px solid #fafafa;
   font-size: 0.95rem;
-  color: #5583e7;
+  color: #0352fc;
   line-height: 1;
   border-radius: 25px;
   outline: none;
@@ -274,7 +275,7 @@ textarea.input {
   height: 500px;
   padding-top:180px;
   border-radius: 50%;
-  background: linear-gradient(to bottom, #e0e2e2, #126db7);
+  background: linear-gradient(to bottom, #e0e2e2, #d8550a);
   bottom: 60%;
   right: 40%;
   transform: translate(-40%, 38%);
@@ -285,7 +286,7 @@ textarea.input {
   position: absolute;
   width: 360px;
   height: 360px;
-  background-color: #e4e6cb;
+  background-color: black;
   border-radius: 50%;
   top: calc(50% - 180px);
   left: calc(50% - 180px);

@@ -1,6 +1,5 @@
 import React,{useState} from 'react';
 import "./css/Testonomial.css";
-import Img from "../img/profile.png"
 import { TestonomialData } from '../data/TestonomialData';
 function Testonomial() {
     const [cursol,setCursol]=useState(0);
@@ -30,7 +29,7 @@ function Testonomial() {
                             </div>
                             <div class="card">
                                 <div class="card-body px-4 py-5">
-                                    <div id="carouselDarkVariant" class="carousel slide carousel-dark" data-mdb-ride="carousel">
+                                    <div id="carouselLightVariant" class="carousel slide carousel-dark" data-mdb-ride="carousel">
                                         <div class="carousel-inner pb-5">
                                         {TestonomialData.map((item,index)=>
                                             <div class={cursol===index ? "":"cur-item"} >
