@@ -1,0 +1,215 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    top: 0;
+    font-size: 12px;
+    padding-top: 30px;
+  }
+  header .logo {
+    font-weight: bold;
+  }
+  header .menu-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+  header .menu-items a {
+    color: #eee;
+    text-decoration: none;
+  }
+  header .menu-items .special {
+    background-color: #eee;
+    color: #020404;
+    padding: 3px 5px;
+    border-radius: 0.3rem;
+  }
+  header .lang {
+    display: flex;
+  }
+
+.video-background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-background video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.left-ctr-1 {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    text-align: left;
+    z-index: 1;
+}
+
+/* .left-ctr-1 span {
+    display: block;
+    line-height: 1.2;
+}
+
+.left-ctr-1 h1 {
+    font-size: 30px;
+    margin: 0;
+    color: #ff9900;
+} */
+
+/* ... your existing CSS styles ... */
+
+/* Stylish text animation */
+.left-ctr-1 {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    text-align: left;
+    z-index: 1;
+    animation: slideInLeft 1s ease-in-out, fadeIn 1s 0.5s ease-in-out;
+}
+
+.left-ctr-1 span {
+    display: block;
+    line-height: 1.2;
+}
+
+.left-ctr-1 h1 {
+    font-size: 42px; /* Increase the text size */
+    margin: 0;
+    color: #f6f6f6;
+}
+
+
+/* Define the style for the yellow "&" */
+.yellow-amp {
+    color: #ff9900;
+    white-space: nowrap;
+}
+
+/* ... your existing CSS styles ... */
+
+/* Stylish box animation */
+.right-ctr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: absolute;
+    top: 77%;
+    right: 30px;
+    transform: translateY(-50%);
+    text-align: left;
+    z-index: 1;
+    animation: slideInLeft 1s ease-in-out, fadeIn 1s 0.5s ease-in-out;
+}
+
+.right-ctr-box {
+    background-color: #282c36;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    overflow: hidden;
+}
+
+.right-ctr-box-inner-1,
+.right-ctr-box-inner-2 {
+    padding: 8px;
+    flex: 1;
+}
+
+.right-ctr-box-inner-1 {
+    background-color: #2a2f3d;
+    color: #ffffff;
+}
+
+.right-ctr-box-inner-2 {
+    background-color: #ff9900;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+.right-ctr-box-inner-2 img {
+    margin-left: 10px;
+}
+
+/* Animation keyframes */
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.right-ctr-box-inner-1 h1,
+.right-ctr-box-inner-1 p,
+.right-ctr-box-inner-2 h1,
+.right-ctr-box-inner-2 p {
+    opacity: 0;
+    animation: slideInRight 1s ease-in-out forwards;
+}
+
+/* ... rest of your existing CSS ... */
+
+
+/* Animation keyframes */
+@keyframes slideInLeft {
+    0% {
+        transform: translateY(-50%) translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(-50%) translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* ... rest of your existing CSS ... */
+
+
+@media (max-width: 768px) {
+    .content h1 {
+        font-size: 28px;
+    }
+    .content p {
+        font-size: 16px;
+    }
+}
+
+
+
+

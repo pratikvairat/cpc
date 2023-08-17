@@ -1,12 +1,12 @@
 
 .faq-section {
    color:#F3F8FF;
-    min-height: 100vh;
-    padding: 5vh 0 0;
+    min-height: 75vh;
+    padding: 2vh 0 0;
 }
 .faq-title h2 {
   position: relative;
-  margin-bottom: 45px;
+  margin-bottom: 40px;
   display: inline-block;
   font-weight: 600;
   line-height: 1;
@@ -25,7 +25,7 @@
     display: none;
 }
 .faq-title p {
-  padding: 0 190px;
+  padding: 0 160px;
   margin-bottom: 10px;
 }
 
@@ -70,8 +70,8 @@
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   cursor: pointer;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .faq .card .card-header .faq-title .badge {

@@ -14,7 +14,7 @@ function FAQ() {
     }
     return (
         <React.Fragment>
-            <section className='container bg-dark'>
+            <div className=' bg-dark'>
                 <div class="faq-section">
                     <div class="row">
                         <div class="col-md-6 offset-md-3">
@@ -26,14 +26,14 @@ function FAQ() {
                             <div class="faq" id="accordion">
                                 {FAQQuestion.map((item, index) =>
                                     <div class="card m-3" key={index} onClick={() => toggleAccordion(index)}>
-                                        <div class="card-header" id="faqHeading-1">
+                                        <div class="card-header" id="faqHeading">
                                             <div class="mb-0">
-                                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-1" data-aria-expanded="true" data-aria-controls="faqCollapse-1">
+                                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse" data-aria-expanded="true" data-aria-controls="faqCollapse-1">
                                                     <span class="badge">{index + 1}</span>{item.question}
                                                 </h5>
                                             </div>
                                         </div>
-                                        <div className={accordion === index ? "active" : "collap"} id="faqCollapse-1" aria-labelledby="faqHeading-1" data-parent="#accordion">
+                                        <div className={accordion === index ? "" : "collap"} id="faqCollapse-1" aria-labelledby="faqHeading-1" data-parent="#accordion">
                                             <div class="card-body">
                                                 <p>{item.answer} </p>
                                             </div>
@@ -44,7 +44,7 @@ function FAQ() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
         </React.Fragment>
     )
 }
