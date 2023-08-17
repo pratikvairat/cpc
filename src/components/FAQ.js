@@ -14,7 +14,7 @@ function FAQ() {
     }
     return (
         <React.Fragment>
-            <div className=' bg-dark'>
+            <div className=' bg-black'>
                 <div class="faq-section">
                     <div class="row">
                         <div class="col-md-6 offset-md-3">

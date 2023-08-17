@@ -12,10 +12,10 @@ function App() {
       <BrowserRouter>
       <NavBar/>
       <LandingPage/>
-      <section className='bg-dark'>
+      <section className='bg-black'>
         <Testonomial/>
       </section>
-      <section className='bg-dark'>
+      <section className='bg-black'>
           <FAQ />
       </section>
       <section className='footer'>

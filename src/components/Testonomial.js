@@ -20,7 +20,7 @@ function Testonomial() {
     }
     return (
         <React.Fragment>
-            <div class="bg-dark">
+            <div class="bg-black">
                 <h2 className='text-white text-center'>Testonomial</h2>
                 <div class="container">
                     <div class="row d-flex justify-content-center">
