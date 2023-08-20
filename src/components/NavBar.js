@@ -1,8 +1,10 @@
 import React from 'react'
 import { Route, Routes, Link } from 'react-router-dom';
 import Home from './Home';
-import Contact from './Contact.js';
+import Contact from './Contact';
+import Login from './Login';
 import './css/NavBar.css'
+import Register from './Register';
 function NavBar() {
     return (
         <React.Fragment>
@@ -45,6 +47,8 @@ function NavBar() {
             <Routes>
                 <Route exact path="/" Component={Home} />
                 <Route exact path="/contact" Component={Contact} />
+                <Route exact path="/login" Component={Login}/>
+                <Route exact path='/register' Component={Register}/>
             </Routes>
         </React.Fragment>
     )

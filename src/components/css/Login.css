@@ -1,0 +1,144 @@
+
+
+
+
+.login {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background:black;
+}
+
+.con1 {
+  max-width: 500px;
+  margin-top: 25vh;
+  max-height: 650px;
+  width: 100vw;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20vh;
+}
+
+.log {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.log img {
+  max-width: 150px;
+  height: auto;
+}
+
+.con1 .title {
+  font-size: 25px;
+  font-weight: 1000;
+  position: relative;
+  text-align: center;
+  margin-top: 10px;
+  color:black;
+}
+
+.con1 .title::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 70px;
+  border-radius: 5px;
+  background:black;
+}
+
+.co form .user-details {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 12px 0;
+}
+
+form .user-detail .input-box {
+  margin-bottom: 15px;
+}
+
+form .input-box span.details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.user-detail .input-box input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.user-detail .input-box input:focus,
+.user-detail .input-box input:valid {
+  border-color: #9b59b6;
+}
+
+form input[type="radio"] {
+  display: none;
+}
+
+.button {
+  height: 45px;
+  margin: 35px 0;
+}
+
+.button input {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background:black;
+}
+
+.button input:hover {
+  background: linear-gradient(-135deg, #399129, #399129);
+}
+
+@media (max-width: 584px) {
+  .con1 {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 459px) {
+  .con1 .co .category {
+    flex-direction: column;
+  }
+}
+
+.not-registered {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.not-registered a {
+  color: #6c30ac;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.not-registered a:hover {
+  color: #b38acc;
+}

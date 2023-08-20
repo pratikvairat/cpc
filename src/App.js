@@ -13,10 +13,8 @@ function App() {
     <React.Fragment>
       <BrowserRouter>
       <NavBar/>
-     
-      
+      <Footer/>
       </BrowserRouter>
-      <Footer></Footer>
     </React.Fragment>
   );
 }

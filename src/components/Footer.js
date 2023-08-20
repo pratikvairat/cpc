@@ -1,7 +1,7 @@
 import React from 'react';
 import './css/Footer.css'; 
 import SliderEvent from './SliderEvent';
-
+import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <footer>
@@ -18,8 +18,8 @@ const Footer = () => {
                 <li><a href="#"><i className="fa fa-angle-double-right"></i>Home</a></li>
                 <li><a href="#"><i className="fa fa-angle-double-right"></i>About Us</a></li>
                 <li><a href="#"><i className="fa fa-angle-double-right"></i>Contact Us</a></li>
-                <li><a href="#"><i className="fa fa-angle-double-right"></i>Login</a></li>
-                <li><a href="#"><i className="fa fa-angle-double-right"></i>Register Now</a></li>
+                <li><Link to="/login"><i className="fa fa-angle-double-right"></i>Login</Link></li>
+                <li><Link to="/register"><i className="fa fa-angle-double-right"></i>Register Now</Link></li>
               </ul>
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4">
