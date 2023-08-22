@@ -1,4 +1,4 @@
-.navbar {
+.navba {
     background-color: transparent;
     transition: background-color 0.3s ease-in-out;
     box-shadow: none;
@@ -15,10 +15,10 @@
 }
 
 .navbar-toggler-icon {
-    background-color: #ffffff;
+    background-color: #0a0000;
 }
 
-.navbar-nav .nav-link {
+.nvb-nav .nvb-link {
     color: #ffffff;
     font-weight: 500;
     transition: color 0.3s;

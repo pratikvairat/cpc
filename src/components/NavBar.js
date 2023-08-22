@@ -8,7 +8,7 @@ import Register from './Register';
 function NavBar() {
     return (
         <React.Fragment>
-            <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <nav class="navba navbar-expand-lg navbar-dark fixed-top">
                 <a class="navbar-brand" href="#">Coding Club</a>
                 <div class="container">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
