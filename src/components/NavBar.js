@@ -81,7 +81,21 @@ function NavBar() {
                             <li className="nav-item">
                                 <a className="nav-link" href="#">Blog</a>
                             </li>
-                            {/* Other navigation items */}
+                            <li class="nav-item">
+                                 <a class="nav-link" href="#">Problem Set</a>
+                            </li>
+                             <li class="nav-item">
+                                 <a class="nav-link" href="#">Profile</a>
+                             </li>
+                             <li class="nav-item">
+                                 <a class="nav-link" href="#">QR/Scan</a>
+                             </li>
+                             <li class="nav-item">
+                                 <a class="nav-link" href="#">Events</a>
+                             </li>
+                             <li class="nav-item">
+                                 <a class="nav-link" href="#">About</a>
+                             </li>
                             <li className="nav-item">
                                 <Link to="/contact" className="nav-link">Contact</Link>
                             </li>
@@ -90,7 +104,10 @@ function NavBar() {
                 </div>
             </nav>
             <Routes>
-                {/* Routes */}
+            <Route exact path="/" Component={Home} />
+                 <Route exact path="/contact" Component={Contact} />
+                 <Route exact path="/login" Component={Login}/>
+                 <Route exact path='/register' Component={Register}/>
             </Routes>
         </React.Fragment>
     )
