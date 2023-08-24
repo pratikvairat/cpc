@@ -4,7 +4,8 @@ import {teams} from '../data/ProfileSliderData';
 
 function ProfileSlider() {
     const [activeIndex, setActiveIndex] = useState(0);
-
+    const [urlImage,setURL]=useState("");
+    
     const handlePrevClick = () => {
       if (activeIndex > 0) {
         setActiveIndex(activeIndex - 1);
@@ -37,7 +38,8 @@ function ProfileSlider() {
                                 <div className="image-content">
                                   <span className="overlay"></span>
                                   <div className="card-image">
-                                    <img src={(member.image)} alt="Not Loading"  />
+                                  
+                                    <img src={urlImage} alt="Not Loading"  />
                                   </div>
                                 </div>
                                 <div className="text-white card-content">
