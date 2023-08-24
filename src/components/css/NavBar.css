@@ -1,4 +1,4 @@
-.navba {
+.navbar {
     background-color: transparent;
     transition: background-color 0.3s ease-in-out;
     box-shadow: none;
@@ -18,7 +18,7 @@
     background-color: #0a0000;
 }
 
-.nvb-nav .nvb-link {
+.navbar-nav .nav-link {
     color: #ffffff;
     font-weight: 500;
     transition: color 0.3s;
@@ -31,4 +31,27 @@
 /* Transparent background on scroll */
 .navbar.scrolled {
     background-color: rgba(0, 0, 0, 0.8);
+    
 }
+/* Default styles for larger screens */
+.navbar-collapse {
+    flex-basis: auto;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 767px) {
+    .navbar-toggler {
+        display: block;
+    }
+    .navbar-collapse {
+        flex-basis: 100%;
+    }
+    .navbar-nav {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .navbar-nav .nav-item {
+        margin-bottom: 10px;
+    }
+}
+
