@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 // import React from 'react'
 // import { Route, Routes, Link } from 'react-router-dom';
 // import Home from './Home';
@@ -58,7 +56,6 @@
 
 // export default NavBar
 
->>>>>>> 60a321bd626918ae7c4f184fb8d8b375ee004b06
 import React from 'react';
 import { Route, Routes, Link } from 'react-router-dom';
 import Home from './Home';
@@ -77,11 +74,7 @@ function NavBar() {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
-<<<<<<< HEAD
-                        <ul className="navbar-nav text-left">
-=======
                         <ul className="navbar-nav">
->>>>>>> 60a321bd626918ae7c4f184fb8d8b375ee004b06
                             <li className="nav-item active">
                                 <Link to="/" className="nav-link">Home</Link>
                             </li>
@@ -120,8 +113,4 @@ function NavBar() {
     )
 }
 
-<<<<<<< HEAD
 export default NavBar;
-=======
-export default NavBar;
->>>>>>> 60a321bd626918ae7c4f184fb8d8b375ee004b06

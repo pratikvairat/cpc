@@ -14,7 +14,7 @@ function App() {
     <React.Fragment>
       <BrowserRouter>
       <NavBar/>
-    
+    <ProfileSlider/>
       <Footer/>
       </BrowserRouter>
     </React.Fragment>
